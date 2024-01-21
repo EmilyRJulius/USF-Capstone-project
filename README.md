@@ -1,3 +1,14 @@
+### Routes Available:
+"/" This is the Home Route which has links to sign up or login
+"/signup" This route allows a useer to sign up and adds them to the database
+"/login" this route logs in a user, and sends the current logged in user id to allow other routes needing this id to be accessible and redirects to the user character list
+"/:curr_user/characters" A logged in Useer's list of Chaaracter Sheets
+"/:curr_user/:character_id" A logged in user's specific character sheet that can be edited
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
