@@ -1,0 +1,49 @@
+.small-input {
+    width: 30px;
+}
+
+.medium-input {
+    width: 50px;
+    height: 30px;
+    font-size: larger;
+}
+
+.long-text {
+    width: 100%;
+    height: 60px;
+    padding: 12px 20px;
+}
+
+.small-text{
+    width: 100%;
+    height: 70px;
+    padding: 12px 20px;
+    resize: none;
+}
+
+.medium-text{
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    resize: none;
+}
+
+.large-text{
+    width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  font-size: 16px;
+  resize: none;
+}
+
+.other-prof{
+    width: 80%;
+    height: 130px;
+    resize: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* need to set up small, medium, and large text inputs for the form in general */

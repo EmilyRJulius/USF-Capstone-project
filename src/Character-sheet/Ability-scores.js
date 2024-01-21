@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import "./Ability-Scores.css";
 
 function AbilityScores(props) {
   const [abilities, setAbilities] = useState([]);
@@ -50,16 +49,76 @@ function AbilityScores(props) {
         <input
           type="text"
           name="proficiency"
+          class = "small-input"
           value={props.character.proficiency}
           onChange={handleProficiency}
         />
       </p>
-      <ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Score</th>
+            <th>Modifier</th>
+            <th>Save</th>
+          </tr>
+        </thead>
+        <tbody>
+        {abilities.map((ability) => (
+          <tr key={ability.index}>
+            <td>
+            <input
+              type="text"
+              name= {`${ability.index}_Score`}
+              class = "small-input" 
+              value={props.character.abilities?.[`${ability.index}_Score`]}
+              onChange={handleAbilities}
+            />
+            {ability.full_name}
+            {ability.skills.map((skill) => (
+              <li key={skill.index}>
+                {/* <pre>{JSON.stringify(skill.name)}</pre>
+                <pre>{JSON.stringify(skill.index)}</pre> */}
+                {skill.name}
+                <input
+                  type="text"
+                  name={skill.index}
+                  class = "small-input"
+                  value={props.character.abilities?.[`${skill.index}`]}
+                  onChange={handleAbilities}
+                />
+              </li>
+            ))}
+            </td>
+            <td>
+            <input
+              type="text"
+              name={`${ability.index}_Modifier`}
+              id={`${ability.index}_Modifier`}
+              class = "small-input"
+              value= {props.character.abilities?.[`${ability.index}_Modifier`]}
+              onChange={handleAbilities}
+            />
+            </td>
+            <td>
+            <input
+              type="text"
+              name={`${ability.index}_Save`}
+              class = "small-input"
+              value={props.character.abilities?.[`${ability.index}_Save`]}
+              onChange={handleAbilities}
+            />
+            </td>
+          </tr>
+        ))}
+        </tbody>
+      </table>
+      {/* <ul>
         {abilities.map((ability) => (
           <ul key={ability.index}>
             <input
               type="text"
-              name= {`${ability.index}_Score`} 
+              name= {`${ability.index}_Score`}
+              class = "small-input" 
               value={props.character.abilities?.[`${ability.index}_Score`]}
               onChange={handleAbilities}
             />
@@ -69,6 +128,7 @@ function AbilityScores(props) {
               type="text"
               name={`${ability.index}_Modifier`}
               id={`${ability.index}_Modifier`}
+              class = "small-input"
               placeholder = "Modifier"
               value= {props.character.abilities?.[`${ability.index}_Modifier`]}
               onChange={handleAbilities}
@@ -76,6 +136,7 @@ function AbilityScores(props) {
             <input
               type="text"
               name={`${ability.index}_Save`}
+              class = "small-input"
               value={props.character.abilities?.[`${ability.index}_Save`]}
               onChange={handleAbilities}
             />
@@ -83,10 +144,11 @@ function AbilityScores(props) {
               <li key={skill.index}>
                 {/* <pre>{JSON.stringify(skill.name)}</pre>
                 <pre>{JSON.stringify(skill.index)}</pre> */}
-                {skill.name}
+                {/* {skill.name}
                 <input
                   type="text"
                   name={skill.index}
+                  class = "small-input"
                   value={props.character.abilities?.[`${skill.index}`]}
                   onChange={handleAbilities}
                 />
@@ -94,11 +156,12 @@ function AbilityScores(props) {
             ))}
           </ul>
         ))}
-      </ul>
+      </ul> */}
       <label>
         Other Proficiencies:
         <textarea
           name="Other_prof"
+          class = "other-prof"
           value={props.character.abilities?.Other_prof}
           onChange={handleAbilities}
         />

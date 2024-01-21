@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./User.css"
 
 function NewUser() {
   const [users, setUsers] = useState({
@@ -38,6 +39,7 @@ function NewUser() {
 
   return (
     <div>
+      <h1>Sign Up</h1>
       <form>
         <label>
           Username:
@@ -50,6 +52,7 @@ function NewUser() {
           />
         </label>
         <br />
+        <br />
         <label>
           Password:
           <input
@@ -60,6 +63,7 @@ function NewUser() {
             onChange={handleNewUser}
           />
         </label>
+        <br />
         <button onClick={createUser}>Submit</button>
       </form>
     </div>

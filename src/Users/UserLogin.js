@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
+import "./User.css"
 
 function Login() {
   const [login, setLogin] = useState({
@@ -31,6 +32,7 @@ function handleLogin(e) {
 
   return (
     <div>
+      <h1>Login</h1>
       <form>
       <label>
         Username:
@@ -53,7 +55,8 @@ function handleLogin(e) {
           onChange={handleLogin}
         />
       </label>
-      <input type="submit" onSubmit={loginUser}/>
+      <br />
+      <button onClick={loginUser}>Submit</button>
       </form>
     </div>
   );

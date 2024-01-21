@@ -19,6 +19,7 @@ function HitPointsAC(props) {
         <input
         type="text"
         name="hp"
+        class = "medium-input"
         value={props.character.HP?.hp}
         onChange={handleHP}
       ></input>
@@ -28,6 +29,7 @@ function HitPointsAC(props) {
       <input
         type="text"
         name="ac"
+        class = "medium-input"
         value={props.character.HP?.ac}
         onChange={handleHP}
       ></input>
@@ -37,6 +39,7 @@ function HitPointsAC(props) {
       <input
         type="text"
         name="Initiatve"
+        class = "medium-input"
         value={props.character.HP?.Initiative}
         onChange={handleHP}
       ></input>
@@ -46,6 +49,7 @@ function HitPointsAC(props) {
       <input
         type="text"
         name="TempHP"
+        class = "medium-input"
         value={props.character.HP?.TempHP}
         onChange={handleHP}
       ></input>
@@ -54,6 +58,7 @@ function HitPointsAC(props) {
       <input
         type="text"
         name="MaxHP"
+        class = "medium-input"
         value={props.character.HP?.MaxHP}
         onChange={handleHP}
       ></input>
@@ -63,6 +68,7 @@ function HitPointsAC(props) {
       <input
         type="text"
         name="HitDice"
+        class = "medium-input"
         value={props.character.HP?.HitDice}
         onChange={handleHP}
       ></input>

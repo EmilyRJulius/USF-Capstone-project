@@ -19,6 +19,7 @@ function Exploration(props) {
         <input
           type="text"
           name="passive_perception"
+          class="medium-input"
           value={props.character.exploration?.passive_perception}
           onChange={handleExploration}
         ></input>
@@ -29,6 +30,7 @@ function Exploration(props) {
         <input
           type="text"
           name="speed"
+          class="medium-input"
           value={props.character.exploration?.speed}
           onChange={handleExploration}
         ></input>
@@ -39,6 +41,7 @@ function Exploration(props) {
         <input
           type="text"
           name="overland_mph"
+          class="medium-input"
           value={props.character.exploration?.overland_mph}
           onChange={handleExploration}
         ></input>
@@ -50,6 +53,7 @@ function Exploration(props) {
         <input
           type="text"
           name="overland_mpd"
+          class="medium-input"
           value={props.character.exploration?.overland_mpd}
           onChange={handleExploration}
         ></input>

@@ -21,6 +21,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="casting_ability"
+                  class = "medium-input"
                   value={props.character.spells?.casting_ability}
                   onChange={handleSpells}
                 />
@@ -30,6 +31,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="save_dc"
+                  class = "medium-input"
                   value={props.character.spells?.save_dc}
                   onChange={handleSpells}
                 />
@@ -39,6 +41,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="attack_bonus"
+                  class = "medium-input"
                   value={props.character.spells?.attack_bonus}
                   onChange={handleSpells}
                 />
@@ -201,6 +204,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level1"
+                  class = "small-input"
                   value={props.character.spells?.slots_level1}
                   onChange={handleSpells}
                 />
@@ -210,6 +214,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level1"
+                  class = "small-input"
                   value={props.character.spells?.expended_level1}
                   onChange={handleSpells}
                 />
@@ -219,6 +224,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level1"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level1}
                   onChange={handleSpells}
                 />
@@ -316,6 +322,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level2"
+                  class = "small-input"
                   value={props.character.spells?.slots_level2}
                   onChange={handleSpells}
                 />
@@ -325,6 +332,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level2"
+                  class = "small-input"
                   value={props.character.spells?.expended_level2}
                   onChange={handleSpells}
                 />
@@ -334,6 +342,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level2"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level2}
                   onChange={handleSpells}
                 />
@@ -431,6 +440,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level3"
+                  class = "small-input"
                   value={props.character.spells?.slots_level3}
                   onChange={handleSpells}
                 />
@@ -440,6 +450,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level3"
+                  class = "small-input"
                   value={props.character.spells?.expended_level3}
                   onChange={handleSpells}
                 />
@@ -449,6 +460,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level3"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level3}
                   onChange={handleSpells}
                 />
@@ -548,6 +560,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level4"
+                  class = "small-input"
                   value={props.character.spells?.slots_level4}
                   onChange={handleSpells}
                 />
@@ -557,6 +570,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level4"
+                  class = "small-input"
                   value={props.character.spells?.expended_level4}
                   onChange={handleSpells}
                 />
@@ -566,6 +580,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level4"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level4}
                   onChange={handleSpells}
                 />
@@ -663,6 +678,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level5"
+                  class = "small-input"
                   value={props.character.spells?.slots_level5}
                   onChange={handleSpells}
                 />
@@ -672,6 +688,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level5"
+                  class = "small-input"
                   value={props.character.spells?.expended_level5}
                   onChange={handleSpells}
                 />
@@ -681,6 +698,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level5"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level5}
                   onChange={handleSpells}
                 />
@@ -778,6 +796,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level6"
+                  class = "small-input"
                   value={props.character.spells?.slots_level6}
                   onChange={handleSpells}
                 />
@@ -787,6 +806,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level6"
+                  class = "small-input"
                   value={props.character.spells?.expended_level6}
                   onChange={handleSpells}
                 />
@@ -796,6 +816,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level6"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level6}
                   onChange={handleSpells}
                 />
@@ -895,6 +916,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level7"
+                  class = "small-input"
                   value={props.character.spells?.slots_level7}
                   onChange={handleSpells}
                 />
@@ -904,6 +926,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level7"
+                  class = "small-input"
                   value={props.character.spells?.expended_level7}
                   onChange={handleSpells}
                 />
@@ -913,6 +936,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level7"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level7}
                   onChange={handleSpells}
                 />
@@ -1010,6 +1034,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level8"
+                  class = "small-input"
                   value={props.character.spells?.slots_level8}
                   onChange={handleSpells}
                 />
@@ -1019,6 +1044,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level8"
+                  class = "small-input"
                   value={props.character.spells?.expended_level8}
                   onChange={handleSpells}
                 />
@@ -1028,6 +1054,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level8"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level8}
                   onChange={handleSpells}
                 />
@@ -1125,6 +1152,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="slots_level9"
+                  class = "small-input"
                   value={props.character.spells?.slots_level9}
                   onChange={handleSpells}
                 />
@@ -1134,6 +1162,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="expended_level9"
+                  class = "small-input"
                   value={props.character.spells?.expended_level9}
                   onChange={handleSpells}
                 />
@@ -1143,6 +1172,7 @@ function Spells(props) {
                 <input
                   type="text"
                   name="prepared_level9"
+                  class = "small-input"
                   value={props.character.spells?.prepared_level9}
                   onChange={handleSpells}
                 />

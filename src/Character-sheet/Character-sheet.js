@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./Character-Sheet.css"
 import AbilityScores from "./Ability-scores";
 import Header from "./Header";
 import HitPointsAC from "./HP-AC";

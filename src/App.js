@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <nav>
+        <nav class="nav-bar">
           <NavLink exact to="/">Home</NavLink>
           <NavLink exact to="/create-character">Create New Character</NavLink>
         </nav>
