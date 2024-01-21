@@ -1,0 +1,9 @@
+input[type=text] {
+    width: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* need to set up small, medium, and large text inputs for the form in general */
