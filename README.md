@@ -5,8 +5,9 @@
 "/:curr_user/characters" A logged in Useer's list of Chaaracter Sheets
 "/:curr_user/:character_id" A logged in user's specific character sheet that can be edited
 
-
-
+### API
+https://www.dnd5eapi.co/docs/#get-/api
+This was primarily used to get a lit of abilities and skills to render on the character page. Future plans include using this to access the classes and races to help users with automatically filling some character sheet information for them.
 
 
 # Getting Started with Create React App
