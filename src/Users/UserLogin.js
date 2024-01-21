@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Redirect, Switch } from "react-router-dom/cjs/react-router-dom.min";
 import axios from 'axios';
 import "./User.css"
 
@@ -15,6 +16,13 @@ const loginUser = async (username, password) => {
     const response = await axios.post('http://localhost:5000/login', login);
 
     console.log(response.data.message);
+    return(
+      <div>
+        <Switch>
+          <Redirect to="/:curr_user/characters" />
+        </Switch>
+      </div>
+    );
     // Handle successful login
   } catch (error) {
     console.error('Login failed:', error.response.data.message);
